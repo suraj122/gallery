@@ -1,0 +1,115 @@
+@import "base";
+@import "grid";
+@import "vars";
+
+.app {
+	background: linear-gradient(#fff, #F6F8FB);
+}
+
+// ==========================
+// Header
+// ==========================
+
+.header__container {
+	@extend %flex-between;
+	padding: 20px 20px;
+}
+.logo{
+	font-size: 30px;
+	font-weight: 300;
+	color: $font-color;
+	letter-spacing: $letter-spacing;
+}
+.primary-btn {
+	background: $theme-color;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 8px 40px;
+	cursor: pointer;
+	font-weight: 300;
+	letter-spacing: $letter-spacing;
+	box-shadow: 0px 10px 40px rgba($font-color, 0.6);
+}
+
+.search{
+	position: relative;
+	.form-control{
+		color: $font-color;
+		border-bottom: 1px solid rgba($font-color, 0.6);
+		border-radius: 0;
+		padding: 12px 50px;
+		margin-top: 80px;
+		font-size: 24px;
+		font-weight: 300;
+		letter-spacing: 0.05em;
+		background: transparent;
+	}
+}
+
+.search__icon {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	margin-top: -6px;
+	color: $font-color;
+	font-weight: 500;
+	display: inline-block;
+	font-size: 30px;
+	-webkit-transform: rotate(-45deg) translateY(-50%);
+	   -moz-transform: rotate(-45deg) translateY(-50%);
+	    -ms-transform: rotate(-45deg) translateY(-50%);
+	     -o-transform: rotate(-45deg) translateY(-50%);
+	        transform: rotate(-45deg) translateY(-50%);
+}
+
+.gallery {
+	padding: 80px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.gallery__content {
+	padding: 20px;
+	img{
+		height: 280px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+}
+figure {
+	box-shadow: 1px 10px 40px rgba($font-color, 0.6);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		-webkit-transform: scale(1.02);
+		   -moz-transform: scale(1.02);
+		    -ms-transform: scale(1.02);
+		     -o-transform: scale(1.02);
+		        transform: scale(1.02);
+	}
+}
+.gallery__img {
+	position: relative;
+}
+.heart-icon {
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	z-index: 1;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+}
+.fig-caption{
+	background: #fff;
+	padding: 30px 40px;
+	font-family: $font-family;
+	color: #567989;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}

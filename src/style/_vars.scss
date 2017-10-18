@@ -1,0 +1,17 @@
+// ==========================
+// Variables
+// ==========================
+
+$font-family: 'Roboto', sans-serif;
+$font-color: #8AA2AC;
+$theme-color: #4195FB;
+$letter-spacing: 0.07em;
+// ==========================
+// Mixins
+// ==========================
+
+%flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
